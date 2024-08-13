@@ -148,14 +148,14 @@
 <meta property="og:site_name" content="PenZ&#39;s Space">
 <meta property="og:description" content="在开发过程中总是避免不了npm包源码不适配我们的需求，通常我们都是提pr或者fork本地改造。但是，有没有能在本地修改源码的方法呢？答案是有的 – 本地补丁 首先在项目根目录新建patches文件夹之后输入">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2024/08/13/images/QQ_1723534472265.png">
-<meta property="og:image" content="http://yoursite.com/2024/08/13/images/QQ_1723534567893.png">
-<meta property="og:image" content="http://yoursite.com/2024/08/13/images/QQ_1723534673042.png">
-<meta property="og:updated_time" content="2024-08-13T07:41:16.185Z">
+<meta property="og:image" content="https://showpenz.github.io/images/QQ_1723534472265.png">
+<meta property="og:image" content="https://showpenz.github.io/images/QQ_1723534567893.png">
+<meta property="og:image" content="https://showpenz.github.io/images/QQ_1723534673042.png">
+<meta property="og:updated_time" content="2024-08-13T08:07:54.906Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何修改npm包中的代码">
 <meta name="twitter:description" content="在开发过程中总是避免不了npm包源码不适配我们的需求，通常我们都是提pr或者fork本地改造。但是，有没有能在本地修改源码的方法呢？答案是有的 – 本地补丁 首先在项目根目录新建patches文件夹之后输入">
-<meta name="twitter:image" content="http://yoursite.com/2024/08/13/images/QQ_1723534472265.png">
+<meta name="twitter:image" content="https://showpenz.github.io/images/QQ_1723534472265.png">
 
 
 
@@ -484,7 +484,7 @@
                 
               
 
-              <time title="创建时间：2024-08-13 15:15:30 / 修改时间：15:41:16" itemprop="dateCreated datePublished" datetime="2024-08-13T15:15:30+08:00">2024-08-13</time>
+              <time title="创建时间：2024-08-13 15:15:30 / 修改时间：16:07:54" itemprop="dateCreated datePublished" datetime="2024-08-13T15:15:30+08:00">2024-08-13</time>
             
 
             
@@ -542,13 +542,13 @@
 <p>在package.json中加入配置</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">"scripts": &#123;</span><br><span class="line">  "postinstall": "patch-package"</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>现在假设我们修改node_modules里的debug包<br><img src="../images/QQ_1723534472265.png" alt="alt text"><br>然后执行</p>
+<p>现在假设我们修改node_modules里的debug包<br><img src="https://showpenz.github.io/images/QQ_1723534472265.png" alt="alt text"><br>然后执行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">npx patch-package debug</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以下是执行结果</span></span><br><span class="line"><span class="comment"># patch-package 8.0.0</span></span><br><span class="line"><span class="comment"># • Creating temporary folder</span></span><br><span class="line"><span class="comment"># • Installing debug@4.3.6 with yarn</span></span><br><span class="line"><span class="comment"># • Diffing your files with clean files</span></span><br><span class="line"><span class="comment"># ✔ Created file patches/debug+4.3.6.patch</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 💡 debug is on GitHub! To draft an issue based on your patch run</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#     yarn patch-package debug --create-issue</span></span><br></pre></td></tr></table></figure>
 
-<p>patches目录下也更新了<br><img src="../images/QQ_1723534567893.png" alt="alt text"><br>好的，现在我们删除node_modules 测试我们的补丁是否生效然后执行</p>
+<p>patches目录下也更新了<br><img src="https://showpenz.github.io/images/QQ_1723534567893.png" alt="alt text"><br>好的，现在我们删除node_modules 测试我们的补丁是否生效然后执行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn</span><br></pre></td></tr></table></figure>
 
-<p>在打开node_modules发现debug的代码已经注入了补丁<img src="../images/QQ_1723534673042.png" alt="alt text"><br>上述即完成了补丁持久化的操作</p>
+<p>在打开node_modules发现debug的代码已经注入了补丁<img src="https://showpenz.github.io/images/QQ_1723534673042.png" alt="alt text"><br>上述即完成了补丁持久化的操作</p>
 
       
     </div>
