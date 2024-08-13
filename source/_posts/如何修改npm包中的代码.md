@@ -28,7 +28,7 @@ patch-package 持久化依赖包的修改
 }
 ```
 现在假设我们修改node_modules里的debug包
-![alt text](../images/QQ_1723534472265.png)
+![alt text](https://showpenz.github.io/images/QQ_1723534472265.png)
 然后执行
 ```bash 
 npx patch-package debug
@@ -45,10 +45,10 @@ npx patch-package debug
 #     yarn patch-package debug --create-issue
 ```
 patches目录下也更新了
-![alt text](../images/QQ_1723534567893.png)
+![alt text](https://showpenz.github.io/images/QQ_1723534567893.png)
 好的，现在我们删除node_modules 测试我们的补丁是否生效然后执行
 ```bash
 yarn
 ```
-在打开node_modules发现debug的代码已经注入了补丁![alt text](../images/QQ_1723534673042.png)
+在打开node_modules发现debug的代码已经注入了补丁![alt text](https://showpenz.github.io/images/QQ_1723534673042.png)
 上述即完成了补丁持久化的操作
