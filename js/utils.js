@@ -339,6 +339,15 @@ $(document).ready(function() {
   initSidebarDimension();
   wrapTable();
 
+
+  const style = document.createElement('style');
+
+  // 添加 CSS 规则隐藏所有 id 为 taboola-livere 的元素
+  style.innerHTML = '#taboola-livere { display: none !important; }';
+
+  // 将 <style> 元素添加到 <head> 中
+  document.head.appendChild(style);
+
   const container = document.getElementById('lv-container');
 
   if (!container) {
