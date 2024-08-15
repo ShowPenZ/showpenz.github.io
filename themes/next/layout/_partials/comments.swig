@@ -25,7 +25,22 @@
     </div>
 
   {% elif theme.livere_uid %}
-   <iframe title="livere"   src="https://was.livere.me/comment/city?id=city&refer={{page.permalink}}&uid={{theme.livere_uid}}&site={{page.permalink}}&title={{page.title}}" scrolling="" frameborder="0" id="lv-comment-399" style="min-width: 100%; width: 100px; min-height: 400px; overflow: auto; border: 0px; z-index: 124212; height: 800px;" ></iframe>
+    <div id="lv-container" data-id="city" data-uid="{{ theme.livere_uid }}">
+      <script type="text/javascript">
+        (function(d, s) {
+            var j, e = d.getElementsByTagName(s)[0];
+
+            if (typeof LivereTower === 'function') { return; }
+
+            j = d.createElement(s);
+            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+            j.async = true;
+
+            e.parentNode.insertBefore(j, e);
+        })(document, 'script');
+      </script>
+      <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
 
   {% elif theme.changyan.enable and theme.changyan.appid and theme.changyan.appkey %}
     <div class="comments" id="comments">
