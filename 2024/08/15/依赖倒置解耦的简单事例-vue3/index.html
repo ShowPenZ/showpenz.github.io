@@ -140,15 +140,18 @@
 
 
 
-  <meta name="keywords" content="blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="场景1：没有依赖倒置的耦合代码1. 定义具体的消息服务类12345678910111213// services/EmailService.jsexport default class EmailService &amp;#123;  send(to, message) &amp;#123;    console.log(`Sending email to $&amp;#123;to&amp;#125;: $&amp;#123;mess">
+<meta name="keywords" content="vue3,设计模式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="依赖倒置解耦的简单事例(vue3)">
+<meta property="og:url" content="http://yoursite.com/2024/08/15/依赖倒置解耦的简单事例-vue3/index.html">
 <meta property="og:site_name" content="PenZ&#39;s Space">
+<meta property="og:description" content="场景1：没有依赖倒置的耦合代码1. 定义具体的消息服务类12345678910111213// services/EmailService.jsexport default class EmailService &amp;#123;  send(to, message) &amp;#123;    console.log(`Sending email to $&amp;#123;to&amp;#125;: $&amp;#123;mess">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2022-09-02T05:40:56.988Z">
+<meta property="og:updated_time" content="2024-08-15T02:52:03.958Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
+<meta name="twitter:title" content="依赖倒置解耦的简单事例(vue3)">
+<meta name="twitter:description" content="场景1：没有依赖倒置的耦合代码1. 定义具体的消息服务类12345678910111213// services/EmailService.jsexport default class EmailService &amp;#123;  send(to, message) &amp;#123;    console.log(`Sending email to $&amp;#123;to&amp;#125;: $&amp;#123;mess">
 
 
 
@@ -158,7 +161,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/tags/">
+  <link rel="canonical" href="http://yoursite.com/2024/08/15/依赖倒置解耦的简单事例-vue3/">
 
 
 
@@ -168,7 +171,7 @@
   };
 </script>
 
-  <title>标签 | PenZ's Space</title>
+  <title>依赖倒置解耦的简单事例(vue3) | PenZ's Space</title>
   
 
 
@@ -296,7 +299,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -414,237 +417,268 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2024/08/15/依赖倒置解耦的简单事例-vue3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PenZ">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PenZ's Space">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h2 class="post-title" itemprop="name headline">标签
-
-</h2>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
+          <h2 class="post-title" itemprop="name headline">依赖倒置解耦的简单事例(vue3)
+
               
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-              目前共计 37 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              
-                <a href="/tags/Antd/" style="font-size: 12px; color: #ccc">Antd</a> <a href="/tags/DEFI/" style="font-size: 12px; color: #ccc">DEFI</a> <a href="/tags/Generator/" style="font-size: 12px; color: #ccc">Generator</a> <a href="/tags/Promise/" style="font-size: 12px; color: #ccc">Promise</a> <a href="/tags/Runkit/" style="font-size: 12px; color: #ccc">Runkit</a> <a href="/tags/Vue/" style="font-size: 12px; color: #ccc">Vue</a> <a href="/tags/Vuepress/" style="font-size: 12px; color: #ccc">Vuepress</a> <a href="/tags/css-问题/" style="font-size: 16.5px; color: #9d9d9d">css 问题</a> <a href="/tags/dva/" style="font-size: 12px; color: #ccc">dva</a> <a href="/tags/float-input/" style="font-size: 12px; color: #ccc">float input</a> <a href="/tags/git/" style="font-size: 12px; color: #ccc">git</a> <a href="/tags/js精度处理/" style="font-size: 12px; color: #ccc">js精度处理</a> <a href="/tags/lazyload-pic/" style="font-size: 12px; color: #ccc">lazyload-pic</a> <a href="/tags/npm/" style="font-size: 16.5px; color: #9d9d9d">npm</a> <a href="/tags/proxy/" style="font-size: 12px; color: #ccc">proxy</a> <a href="/tags/react/" style="font-size: 30px; color: #111">react</a> <a href="/tags/ripple-button/" style="font-size: 12px; color: #ccc">ripple-button</a> <a href="/tags/slot-machines/" style="font-size: 12px; color: #ccc">slot machines</a> <a href="/tags/starter/" style="font-size: 12px; color: #ccc">starter</a> <a href="/tags/telegram/" style="font-size: 12px; color: #ccc">telegram</a> <a href="/tags/umi/" style="font-size: 12px; color: #ccc">umi</a> <a href="/tags/umi-js/" style="font-size: 12px; color: #ccc">umi.js</a> <a href="/tags/vue/" style="font-size: 21px; color: #6f6f6f">vue</a> <a href="/tags/vue3/" style="font-size: 12px; color: #ccc">vue3</a> <a href="/tags/webpack/" style="font-size: 12px; color: #ccc">webpack</a> <a href="/tags/websocket/" style="font-size: 16.5px; color: #9d9d9d">websocket</a> <a href="/tags/乐器/" style="font-size: 12px; color: #ccc">乐器</a> <a href="/tags/代码优化/" style="font-size: 12px; color: #ccc">代码优化</a> <a href="/tags/以太坊/" style="font-size: 12px; color: #ccc">以太坊</a> <a href="/tags/区块链/" style="font-size: 25.5px; color: #404040">区块链</a> <a href="/tags/古典吉他/" style="font-size: 12px; color: #ccc">古典吉他</a> <a href="/tags/合约开发/" style="font-size: 12px; color: #ccc">合约开发</a> <a href="/tags/在线代码编辑/" style="font-size: 12px; color: #ccc">在线代码编辑</a> <a href="/tags/安卓手机解锁/" style="font-size: 12px; color: #ccc">安卓手机解锁</a> <a href="/tags/心得/" style="font-size: 21px; color: #6f6f6f">心得</a> <a href="/tags/设计模式/" style="font-size: 12px; color: #ccc">设计模式</a> <a href="/tags/黑苹果-hackintosh/" style="font-size: 12px; color: #ccc">黑苹果(hackintosh)</a>
-              
-            </div>
-          </div>
+            
+          </h2>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2024-08-15 10:34:02 / 修改时间：10:52:03" itemprop="dateCreated datePublished" datetime="2024-08-15T10:34:02+08:00">2024-08-15</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="场景1：没有依赖倒置的耦合代码"><a href="#场景1：没有依赖倒置的耦合代码" class="headerlink" title="场景1：没有依赖倒置的耦合代码"></a>场景1：没有依赖倒置的耦合代码</h1><h2 id="1-定义具体的消息服务类"><a href="#1-定义具体的消息服务类" class="headerlink" title="1. 定义具体的消息服务类"></a>1. 定义具体的消息服务类</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// services/EmailService.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">EmailService</span> </span>&#123;</span><br><span class="line">  send(to, message) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`Sending email to <span class="subst">$&#123;to&#125;</span>: <span class="subst">$&#123;message&#125;</span>`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// services/SMSService.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">SMSService</span> </span>&#123;</span><br><span class="line">  send(to, message) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`Sending SMS to <span class="subst">$&#123;to&#125;</span>: <span class="subst">$&#123;message&#125;</span>`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-在组件中直接依赖具体的服务"><a href="#2-在组件中直接依赖具体的服务" class="headerlink" title="2. 在组件中直接依赖具体的服务"></a>2. 在组件中直接依赖具体的服务</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- components/NotificationComponent.vue --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"sendNotification"</span>&gt;</span>Send Notification<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span>&gt;</span></span><br><span class="line"><span class="javascript"><span class="comment">// 直接引入具体的消息服务实现</span></span></span><br><span class="line"><span class="javascript"><span class="keyword">import</span> EmailService <span class="keyword">from</span> <span class="string">'../services/EmailService'</span>;</span></span><br><span class="line"><span class="javascript"><span class="comment">// import SMSService from '../services/SMSService'; // 如果想使用 SMS 服务，需要手动修改这里</span></span></span><br><span class="line"></span><br><span class="line"><span class="javascript"><span class="keyword">const</span> emailService = <span class="keyword">new</span> EmailService();</span></span><br><span class="line"><span class="javascript"><span class="comment">// const smsService = new SMSService(); // 如果要切换到 SMS 服务，需要手动创建实例</span></span></span><br><span class="line"></span><br><span class="line"><span class="javascript"><span class="keyword">const</span> sendNotification = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span></span><br><span class="line"><span class="javascript">  emailService.send(<span class="string">'user@example.com'</span>, <span class="string">'Hello without Dependency Inversion!'</span>);</span></span><br><span class="line"><span class="javascript">  <span class="comment">// smsService.send('123-456-7890', 'Hello via SMS!'); // 如果要使用 SMS 服务，需要手动修改这里</span></span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="场景1结论"><a href="#场景1结论" class="headerlink" title="场景1结论"></a>场景1结论</h2><p>假设你想从 EmailService 切换到 SMSService，你需要在组件代码中手动进行以下修改：</p>
+<ul>
+<li>修改 import 语句，切换到新的服务类。</li>
+<li>修改实例化代码，使用新的服务类创建实例。</li>
+<li>修改所有调用代码，确保使用新的服务实例发送消息。</li>
+</ul>
+<h1 id="场景2：使用依赖倒置解耦合代码"><a href="#场景2：使用依赖倒置解耦合代码" class="headerlink" title="场景2：使用依赖倒置解耦合代码"></a>场景2：使用依赖倒置解耦合代码</h1><h2 id="1-定义-MessageService-抽象接口"><a href="#1-定义-MessageService-抽象接口" class="headerlink" title="1. 定义 MessageService 抽象接口"></a>1. 定义 MessageService 抽象接口</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// services/MessageService.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">MessageService</span> </span>&#123;</span><br><span class="line">  send(to, message) &#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'This method should be overridden'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-定义具体的消息服务类"><a href="#2-定义具体的消息服务类" class="headerlink" title="2. 定义具体的消息服务类"></a>2. 定义具体的消息服务类</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// services/EmailService.js</span></span><br><span class="line"><span class="keyword">import</span> MessageService <span class="keyword">from</span> <span class="string">'./MessageService'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">EmailService</span> <span class="keyword">extends</span> <span class="title">MessageService</span> </span>&#123;</span><br><span class="line">  send(to, message) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`Sending email to <span class="subst">$&#123;to&#125;</span>: <span class="subst">$&#123;message&#125;</span>`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// services/SMSService.js</span></span><br><span class="line"><span class="keyword">import</span> MessageService <span class="keyword">from</span> <span class="string">'./MessageService'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">SMSService</span> <span class="keyword">extends</span> <span class="title">MessageService</span> </span>&#123;</span><br><span class="line">  send(to, message) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`Sending SMS to <span class="subst">$&#123;to&#125;</span>: <span class="subst">$&#123;message&#125;</span>`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-在页面中提供消息服务"><a href="#3-在页面中提供消息服务" class="headerlink" title="3. 在页面中提供消息服务"></a>3. 在页面中提供消息服务</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- page.vue --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">NotificationComponent</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span>&gt;</span></span><br><span class="line"><span class="javascript"><span class="keyword">import</span> &#123; provide &#125; <span class="keyword">from</span> <span class="string">'vue'</span>;</span></span><br><span class="line"><span class="javascript"><span class="keyword">import</span> EmailService <span class="keyword">from</span> <span class="string">'./services/EmailService'</span>;</span></span><br><span class="line"><span class="javascript"><span class="comment">// import SMSService from './services/SMSService'; // 可以替换 EmailService</span></span></span><br><span class="line"></span><br><span class="line"><span class="javascript"><span class="keyword">const</span> messageService = <span class="keyword">new</span> EmailService();</span></span><br><span class="line"><span class="javascript"><span class="comment">// const messageService = new SMSService(); // 如果想使用 SMS 服务，可以替换上面的实例化</span></span></span><br><span class="line"></span><br><span class="line"><span class="javascript">provide(<span class="string">'messageService'</span>, messageService);</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-创建消息服务的组件"><a href="#4-创建消息服务的组件" class="headerlink" title="4. 创建消息服务的组件"></a>4. 创建消息服务的组件</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- components/NotificationComponent.vue --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"sendNotification"</span>&gt;</span>Send Notification<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span>&gt;</span></span><br><span class="line"><span class="javascript"><span class="keyword">import</span> &#123; inject &#125; <span class="keyword">from</span> <span class="string">'vue'</span>;</span></span><br><span class="line"></span><br><span class="line"><span class="javascript"><span class="keyword">const</span> messageService = inject(<span class="string">'messageService'</span>);</span></span><br><span class="line"></span><br><span class="line"><span class="javascript"><span class="keyword">const</span> sendNotification = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span></span><br><span class="line"><span class="javascript">  messageService.send(<span class="string">'user@example.com'</span>, <span class="string">'Hello via Vue 3 and Dependency Inversion!'</span>);</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="场景2结论"><a href="#场景2结论" class="headerlink" title="场景2结论"></a>场景2结论</h2><p>解耦: 组件和服务实现之间是解耦的，组件只关心 MessageService 抽象接口，而不关心具体的实现。<br>灵活性: 可以轻松替换不同的服务实现而无需修改组件代码。<br>可测试性: 组件依赖于抽象接口，可以轻松地在测试中替换为模拟实现。</p>
+<h2 id="依赖倒置的核心思想是：”高层模块不应该依赖于低层模块，而是应该依赖于抽象接口”。"><a href="#依赖倒置的核心思想是：”高层模块不应该依赖于低层模块，而是应该依赖于抽象接口”。" class="headerlink" title="依赖倒置的核心思想是：”高层模块不应该依赖于低层模块，而是应该依赖于抽象接口”。"></a>依赖倒置的核心思想是：”高层模块不应该依赖于低层模块，而是应该依赖于抽象接口”。</h2>
       
     </div>
+
     
+
+    
+    
+    
+
+    
+      <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="PenZ wechat" style="width: 200px; max-width: 100%;">
+  <div>交个朋友吧</div>
+</div>
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>点滴分享，您的支持将极大的鼓励我！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
 
 
 
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>PenZ</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
     
+    <a href="http://yoursite.com/2024/08/15/依赖倒置解耦的简单事例-vue3/" title="依赖倒置解耦的简单事例(vue3)">http://yoursite.com/2024/08/15/依赖倒置解耦的简单事例-vue3/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
-    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/vue3/" rel="tag"># vue3</a>
+          
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2024/08/13/如何修改npm包中的代码/" rel="next" title="如何修改npm包中的代码">
+                <i class="fa fa-chevron-left"></i> 如何修改npm包中的代码
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
           </div>
           
+
+  
+   <iframe title="livere" src="https://was.livere.me/comment/city?id=city&refer=http://yoursite.com/2024/08/15/依赖倒置解耦的简单事例-vue3/&uid=MTAyMC80NDgwMy8yMTMyNA==&site=http://yoursite.com/2024/08/15/依赖倒置解耦的简单事例-vue3/&title=依赖倒置解耦的简单事例(vue3)" scrolling frameborder="0" id="lv-comment-399" style="min-width: 100%; width: 100px; min-height: 400px; overflow: auto; border: 0px; z-index: 124212; height: 800px;"></iframe>
+
+  
+
+
 
         </div>
         
@@ -664,8 +698,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -934,6 +977,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#场景1：没有依赖倒置的耦合代码"><span class="nav-number">1.</span> <span class="nav-text">场景1：没有依赖倒置的耦合代码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-定义具体的消息服务类"><span class="nav-number">1.1.</span> <span class="nav-text">1. 定义具体的消息服务类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-在组件中直接依赖具体的服务"><span class="nav-number">1.2.</span> <span class="nav-text">2. 在组件中直接依赖具体的服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#场景1结论"><span class="nav-number">1.3.</span> <span class="nav-text">场景1结论</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#场景2：使用依赖倒置解耦合代码"><span class="nav-number">2.</span> <span class="nav-text">场景2：使用依赖倒置解耦合代码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-定义-MessageService-抽象接口"><span class="nav-number">2.1.</span> <span class="nav-text">1. 定义 MessageService 抽象接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-定义具体的消息服务类"><span class="nav-number">2.2.</span> <span class="nav-text">2. 定义具体的消息服务类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-在页面中提供消息服务"><span class="nav-number">2.3.</span> <span class="nav-text">3. 在页面中提供消息服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-创建消息服务的组件"><span class="nav-number">2.4.</span> <span class="nav-text">4. 创建消息服务的组件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#场景2结论"><span class="nav-number">2.5.</span> <span class="nav-text">场景2结论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖倒置的核心思想是：”高层模块不应该依赖于低层模块，而是应该依赖于抽象接口”。"><span class="nav-number">2.6.</span> <span class="nav-text">依赖倒置的核心思想是：”高层模块不应该依赖于低层模块，而是应该依赖于抽象接口”。</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -1126,6 +1186,23 @@
 
   
 
+
+  
+    <script>
+  window.livereOptions = {
+    refer: '2024/08/15/依赖倒置解耦的简单事例-vue3/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+  
 
 
   
@@ -1520,13 +1597,13 @@
       var articles = db.collection('articles')
 
       //https://hexo.io/docs/variables.html
-      var isPost = '标签'.length > 0
+      var isPost = '依赖倒置解耦的简单事例(vue3)'.length > 0
       var isArchive = '' === 'true'
       var isCategory = ''.length > 0
       var isTag = ''.length > 0
 
       if (isPost) { //is article page
-        var title = '标签'
+        var title = '依赖倒置解耦的简单事例(vue3)'
         var doc = articles.doc(title)
 
         getCount(doc, true).then(appendCountTo($('.post-meta')))
@@ -1576,6 +1653,25 @@
   
 
   
+  <script>
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id: 19260,
+      el: 'wpac-rating',
+      color: 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  </script>
+
 
   
 
