@@ -301,6 +301,23 @@ $(document).ready(function() {
     $('table').not('.gist table').wrap('<div class="table-container"></div>');
   }
 
+  setTimeout(()=>{
+    const container = document.getElementById("lv-container");
+    if (container) {
+      // 查找容器内的所有 iframe 元素
+      const iframes = container.getElementsByTagName("iframe");
+
+      // 检查 iframe 的数量是否超过一个
+      if (iframes.length > 1) {
+        // 循环从最后一个 iframe 开始删除，保留第一个
+        for (let i = iframes.length - 1; i > 0; i--) {
+          container.removeChild(iframes[i]);
+        }
+      }
+    } else {
+      console.log('Element with id "lv-container" not found.');
+    }
+  },2000)
   /**
    * Init Sidebar & TOC inner dimensions on all pages and for all schemes.
    * Need for Sidebar/TOC inner scrolling if content taller then viewport.
