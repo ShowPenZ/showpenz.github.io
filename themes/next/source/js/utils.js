@@ -301,23 +301,7 @@ $(document).ready(function() {
     $('table').not('.gist table').wrap('<div class="table-container"></div>');
   }
 
-  setTimeout(()=>{
-    const container = document.getElementById("lv-container");
-    if (container) {
-      // 查找容器内的所有 iframe 元素
-      const iframes = container.getElementsByTagName("iframe");
 
-      // 检查 iframe 的数量是否超过一个
-      if (iframes.length > 1) {
-        // 循环从最后一个 iframe 开始删除，保留第一个
-        for (let i = iframes.length - 1; i > 0; i--) {
-          container.removeChild(iframes[i]);
-        }
-      }
-    } else {
-      console.log('Element with id "lv-container" not found.');
-    }
-  },2000)
   /**
    * Init Sidebar & TOC inner dimensions on all pages and for all schemes.
    * Need for Sidebar/TOC inner scrolling if content taller then viewport.
@@ -354,4 +338,41 @@ $(document).ready(function() {
   }
   initSidebarDimension();
   wrapTable();
+
+
+  const style = document.createElement('style');
+
+  // 添加 CSS 规则隐藏所有 id 为 taboola-livere 的元素
+  style.innerHTML = '#taboola-livere { display: none !important; }';
+
+  // 将 <style> 元素添加到 <head> 中
+  document.head.appendChild(style);
+
+  const container = document.getElementById('lv-container');
+
+  if (!container) {
+    console.log('Element with id "lv-container" not found.');
+    return;
+  }
+
+  // 观察到的DOM变化的回调函数
+  const observerCallback = function(mutationsList, observer) {
+    const iframes = container.getElementsByTagName('iframe');
+
+    if (iframes.length > 1) {
+      // 停止观察以避免重复触发
+      observer.disconnect();
+
+      // 保留第一个 iframe，删除其余的
+      for (let i = iframes.length - 1; i > 0; i--) {
+        container.removeChild(iframes[i]);
+      }
+    }
+  };
+
+  // 配置 MutationObserver 观察目标
+  const observer = new MutationObserver(observerCallback);
+
+  // 开始观察目标节点及其子节点的变化
+  observer.observe(container, { childList: true, subtree: true });
 });
